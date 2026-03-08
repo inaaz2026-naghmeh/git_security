@@ -1,0 +1,80 @@
+# === SECURITY: NEVER PUSH THESE FILES ===
+
+# Environment variables (API keys, secrets, database URLs)
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.sample
+!.env.example
+
+# Credentials and Private Keys
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+id_rsa
+id_ed25519
+id_ecdsa
+id_dsa
+*.pub
+ssh_config
+
+# Cloud Provider Credentials
+credentials.json
+client_secret.json
+service-account.json
+google-cloud-sdk/
+.aws/
+.azure/
+.config/gcloud/
+
+# Configuration files that often contain secrets
+config.json
+secrets.yaml
+secrets.json
+settings.py
+local_settings.py
+
+# Wildcards for anything containing "secret" or "token"
+*secret*
+*token*
+*credential*
+
+# === LOGS AND TEMPORARY FILES ===
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pip-log.txt
+
+# Operating System Metadata
+.DS_Store
+Thumbs.db
+
+# === LANGUAGE-SPECIFIC (Standard) ===
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env/
+
+# Node.js
+node_modules/
+dist/
+build/
+.npm
+
+# Editor / IDE settings (can leak local paths)
+.vscode/
+.idea/
+*.swp
+*.swo
